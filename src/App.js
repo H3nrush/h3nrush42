@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-
+import telegramLogo from './icons8-telegram.gif'
 function App() {
   const [hovered, setHovered] = useState(false);
 
@@ -89,6 +89,12 @@ function App() {
             <span>🏦</span>
             IBAN
           </div>
+
+          <a href="https://t.me/mikkarra" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>
+          <div className="telegram-info">
+            <img src={telegramLogo} alt="Telegram Logo" className="telegram-logo" />
+          </div>
+          </a>
 
         </div>
 
